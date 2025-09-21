@@ -22,11 +22,13 @@ function Main() {
     fetchEmployees();
   }, []);
 
+  const [results, setResults] = useState(false);
+
   return (
     <>
       <Header />
-      <ExisitingEmployee employees={employees} /> 
-      <ResultedEmployee employees={employees}/>
+      <ExisitingEmployee employees={employees} setResults={setResults} />
+      {results && <ResultedEmployee employees={employees} />}
     </>
   );
 }

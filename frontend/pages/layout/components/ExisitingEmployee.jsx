@@ -1,4 +1,4 @@
-function ExistingEmployee({ employees }) {
+function ExistingEmployee({ employees, setResults }) {
   return (
     <div className="mx-6">
       <h1 className="text-2xl font-bold">Existing Employee Requests</h1>
@@ -19,8 +19,8 @@ function ExistingEmployee({ employees }) {
         </div>
       ))}
 
-      <button className="mt-4 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition w-full">
-        Approve All
+      <button className="my-4 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition w-full" onClick={() => setResults(true)}>
+        Simulate Access
       </button>
     </div>
   );
