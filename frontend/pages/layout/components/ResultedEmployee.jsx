@@ -1,4 +1,4 @@
-function ResultedEmployee() {
+function ResultedEmployee({employees}) {
   return <h1>Resulted Employee</h1>;
 }
 

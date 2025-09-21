@@ -26,7 +26,7 @@ function Main() {
     <>
       <Header />
       <ExisitingEmployee employees={employees} /> 
-      <ResultedEmployee />
+      <ResultedEmployee employees={employees}/>
     </>
   );
 }
