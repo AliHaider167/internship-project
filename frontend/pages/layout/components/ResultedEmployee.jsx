@@ -1,5 +1,5 @@
 function ResultedEmployee({employees}) {
-  return <h1>Resulted Employee</h1>;
+  return ;
 }
 
 export default ResultedEmployee;
